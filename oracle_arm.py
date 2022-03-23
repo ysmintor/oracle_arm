@@ -196,7 +196,7 @@ class FileParser:
 
 class InsCreate:
     shape = 'VM.Standard.A1.Flex'
-    sleep_time = 5.0
+    sleep_time = 53.0
     try_count = 0
     desp = ""
 
@@ -247,7 +247,7 @@ class InsCreate:
                 else:
                     # 没有被限速，恢复减少的时间
                     print("目前没有请求限速,快马加刷中")
-                    if self.sleep_time > 15:
+                    if self.sleep_time > 50:
                         self.sleep_time -= 10
                 print("本次返回信息:",e)
                 time.sleep(self.sleep_time)
